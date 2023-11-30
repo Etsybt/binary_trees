@@ -9,16 +9,16 @@
  */
 bst_t *array_to_bst(int *array, size_t size)
 {
-	 binary_tree_t *root;
-	 size_t i = 0;
+	binary_tree_t *root;
+	size_t i = 0;
 
-	 if (array == NULL || size == 0)
-		 return (NULL);
+	if (array == NULL || size == 0)
+		return (NULL);
 
-	 root = NULL;
+	root = NULL;
 
-	 for (; i < size; i++)
-		 bst_insert(&root, array[i]);
+	for (; i < size; i++)
+		bst_insert(&root, array[i]);
 
-	 return (root);
+	return (root);
 }
